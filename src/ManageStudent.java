@@ -9,7 +9,7 @@ public class ManageStudent {
             System.out.println(student);
         }
     }
-    public void displayAddByid(){
+    public static void displayAddByid(){
         System.out.print("nhập id ID: ");
         int id = scanner.nextInt();
         scanner.nextLine();
@@ -29,7 +29,7 @@ public class ManageStudent {
         System.out.println("thêm thành công");
 
     }
-    public void displayEditByid(){
+    public static void displayEditByid(){
         System.out.print("nhập id sinh viên bạn muốn sửa: ");
         int id = scanner.nextInt();
         for (int i = 0; i < students.size(); i++) {
@@ -54,7 +54,7 @@ public class ManageStudent {
         System.out.println("id không tồn tại");
 
     }
-    public void displayDeleteByid(){
+    public static void displayDeleteByid(){
         System.out.print("Nhập id sinh viên bạn muốn xóa: ");
         int id = scanner.nextInt();
         for (int i = 0; i < students.size(); i++) {
@@ -64,7 +64,7 @@ public class ManageStudent {
         }
 
     }
-    public void displaySearchByid(){
+    public static void displaySearchByid(){
         System.out.print("nhập id sinh viên bạn muốn tìm: ");
         int id = scanner.nextInt();
         for (int i = 0; i < students.size(); i++) {
