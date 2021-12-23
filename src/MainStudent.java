@@ -19,38 +19,38 @@ public class MainStudent {
             System.out.println("7.sinh viên có điểm cao nhất ");
             System.out.println("0. thoát");
 
-            System.out.print("Mời bạn nhập: ");thêm sinh viên theo id
+            System.out.print("Mời bạn nhập: ");
 
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("hiển thị tất cả sinh viên");
-                    ManageStudent.displayAllSudent();
+                    ManageStudent.displayAllStudent();
                     break;
                 case 2:
                     System.out.println("thêm sinh viên theo id ");
-                    ManageStudent
+                    ManageStudent.displayAddByid();
 
                     break;
                 case 3:
                     System.out.println("sửa sinh viên theo id");
-                    ManageStudent
+                    ManageStudent.displayEditByid();
                     break;
                 case 4:
                     System.out.println("xóa sinh viên theo id");
-                    ManageStudent
+                    ManageStudent.displayDeleteByid();
                     break;
                 case 5:
                     System.out.println("hiển thị tất cả sinh viên");
-                    ManageStudent
+                    ManageStudent.displaySearchByid();
                     break;
                 case 6:
                     System.out.println("in ra danh sách được xắp xếp theo điểm trung bình");
-                    ManageStudent
+                    ManageStudent.displayAVG();
                     break;
                 case 7:
                     System.out.println(".sinh viên có điểm cao nhất");
-                    ManageStudent
+                    ManageStudent.displayMaxscore();
                     break;
             }
         } while (choice != 0);
